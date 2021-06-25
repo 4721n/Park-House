@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/master.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel='icon' type='image/png' href='./img/favicon_io/favicon-32x32.png' />
+
+
+    <!--JS LIBRARY-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <title>Park House London</title>
+
+    <meta name="description" content="Park House is a Victorian conversion office building nestled in a peaceful surrounding within W10, managed by Kitt Offices.">
+
+    <script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type" : "RealEstateAgent",
+          "image" : "https://nathanwinter.uk/ParkHouse/logo/ONSCREEN/PNG/WHITE.png",
+          "url" : "https://parkhouselondon.co.uk"
+          "name" : "Park House",
+          "description" : "Park House is a Victorian conversion office building nestled in a peaceful surrounding within W10, managed by Kitt Offices."
+        }
+        </script>
+
+</head>
+<body>
+    
+    <!--NAVIGATION-->
+
+    <nav class="navigation">
+
+        <div class="logo">
+             <a href="./index.html">
+                <img src="./logo/ONSCREEN/PNG/WHITE.png" alt="">
+            </div>
+            </a>
+
+            <div class="availble-button"><a href="./lease-options.html" target="_blank"> AVAILBLE <br id="brochure-br"> OFFICES </a></div>
+            <div class="brochure"><a href="PH_BROCHURE_0.1_copy.pdf" target="_blank"> DOWNLOAD<br id="brochure-br"> BROCHURE </a></div>
+
+         <div class="burger">
+             <div class="line"></div>
+             <div class="line"></div>
+             <div class="line"></div>
+         </div>
+         
+     </nav>
+ 
+    <div class="navigation-links">
+         <a href="./index.html" id="home-link">Home</a>
+         <a href="./location.html" id="location-link">Location</a>
+         <a href="./connectivity.html" id="connectivity-link">Connectivity</a>
+         <a href="./offices.html" id="offices-link">Offices</a>
+         <a href="./facilities.html" id="facilities-link">Facilities</a>
+         <a href="./lease-options.html" id="pricing-link">Lease Options</a>
+         <a href="./contact.html" id="contact-link">Contact</a>
+         <div class="exit-nav"> X </div>
+     </div>
+
+     <!--PAGE CONTENTS-->
+
+     <!--HERO CONTAINER-->
+
+     <div class="index-hero">
+        <video  class="video-landscape" id="myVideo" autoplay loop playsInline defaultMuted muted>
+            <source src="./video/KITT 20 04 2021 6.mp4" type="video/mp4">
+        </video>
+
+        <script>
+            var vid = document.getElementById("myVideo");
+                vid.volume = 0.35;
+        </script>
+        
+      
+        <button onclick="toggleMute();" id="mute-button">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-play"></i>
+            </button>
+
+            <p class="full-video-link"> <a href="./full-video.html">watch the full video here</a></p>
+
+
+<!--         <h1>A Victorian conversion <br>
+            nestled in a peaceful <br>
+            surrounding.</h1> -->
+     </div>
+
+     <!--PARK HOUSE LOGO-->
+
+     <div class="parkhouse-logo-container" >
+        <img src="./logo/ONSCREEN/PNG/CORAL.png" alt="" data-aos="fade-up" data-aos-duration="2000">
+    </div>
+
+     <!-- WORK / LIFE BALANCE CONTAINER -->
+
+     <div class="index-life-work">
+
+        <div class="h2p">
+        <h2> A Victorian conversion for a Latimer Road local </h2>
+            <p>The building is a smart brick-fronted Victorian conversion, nestled in a peaceful surrounding area between White City and North Kensington. With industrial features and a bright fresh interior, the building has 5 privately newly-refur- bished offices ready to move into.</p>
+    
+    </div>
+
+        <img src="./img/park-house/_IZ07419.jpg" alt="" class="h2pimg1">
+        <img src="./img/park-house/_IZ07629.jpg" class="h2pimg2">
+
+     </div>
+
+
+     <!--ADAPTABLE SPACE COMTAINER-->
+
+     <div class="adaptable-space">
+
+        <div class="as">
+        <h2>An adaptable space <br> to make your own</h2>
+        <p>These suites are ideal for a local occupier looking for a smart space ready to make their own. Park House is ideal for those who want to avoid the commute to the City and drive to the office instead, with parking available on-site too.
+        </p>
+        </div>
+
+        <img src="./img/park-house/_IZ07417.jpg" alt="" class="asimg1">
+        <img src="./img/park-house/_IZ07503-HDR.jpg" alt="" class="asimg2">
+        
+     </div>
+
+
+          <!--DESIGNED TO RESTORE COMTAINER-->
+
+          <div class="designed-restore">
+
+            <div class="dr">
+            <h2>Designed to inspire</h2>
+            <p>All included in one simple fixed monthly price, you get to customise the space by partnering with our interior de- sign team and also have it managed for you by your Kitt Space Partner so that you can focus on your business.</p>
+            </div>
+    
+            <img src="./img/park-house/_IZ07419.jpg" alt="" class="drimg1">
+            <img src="./img/park-house/_IZ07359-HDR.jpg" alt="" class="drimg2">
+            
+         </div>
+
+         <!--BOTTOM MENU-->
+
+         <div class="bottom-menu">
+
+            <ul>
+                <a href="./location.html"><li>Location <i class="fas fa-arrow-right"></i></li></a>
+                <a href="./connectivity.html"><li>Connectivity <i class="fas fa-arrow-right"></i></li></a>
+                <a href="./facilities.html"><li>Facilities <i class="fas fa-arrow-right"></i></li></a>
+                <a href="./lease-options.html"><li>Lease Options <i class="fas fa-arrow-right"></i></li></a>
+                <a href="./contact.html"><li>Contact <i class="fas fa-arrow-right"></i></li></a>
+            </ul>
+
+         </div>
+
+
+     <!--FOOTER-->
+
+
+     <div class="footer">
+
+        <div class="footer-menu">
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./location.html"><li>Location</li></a>
+                <a href="./connectivity.html"><li>Connectivity</li></a>
+                <a href="./facilities.html"><li>Facilities</li></a>
+                <a href="./lease-options.html"><li>Lease Options</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+                <br>
+                <li class="park-house-c"> © 2021 Park House </li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+
+            <div class="footer-right-top">
+                <ul>
+                    <li style="font-weight:600;">Get in touch to find out more:</li>
+                    <li>+44 200 000 0000</li>
+                    <li>admin@parkhouselondon.co.uk</li>
+                </ul>
+
+                <ul>
+                    <br>
+                    <li>Park House, Jubilee House</li>
+                    <li>208 Latimer Road, London W10 6QY</li>
+                </ul>
+            </div>
+
+            <div class="footer-right-bottom">
+
+                <img src="./logo/ONSCREEN/PNG/WHITE.png" alt="">
+                <img src="./logo/Amazon-Property.png" alt="" style="transform: scale(.8);">
+                <img src="./logo/powered-by-Kitt-Offices.png" alt="">
+
+            </div>
+
+        </div>
+
+
+     </div>
+
+     <script src="./JavaScript/muted.js"></script>
+     <script src="./JavaScript/navigation.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+       </script>
+</body>
+</html>

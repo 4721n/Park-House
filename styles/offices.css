@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@import url(./master.scss);
+html {
+  background: #ededed;
+  background-size: 100%;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  html {
+    background: #ededed;
+    background-image: none;
+  }
+}
+
+.index-hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/park-house/_IZ07509-HDR.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-hero h1 {
+  margin-left: 5rem;
+  color: white;
+  font-size: 4rem;
+  font-family: Poppins;
+  font-weight: 400;
+  background: #ff4540;
+  border: 4px solid white;
+  padding: .5rem 2rem;
+}
+
+@media (max-width: 500px) {
+  .index-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.index-life-work {
+  height: 130vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  padding: 5% 0rem;
+  /*LIST STYLING*/
+}
+
+.index-life-work ul {
+  list-style: none;
+}
+
+.index-life-work ul li {
+  margin-bottom: 5px;
+}
+
+.index-life-work li::before {
+  content: '●';
+  color: #ff4540;
+  padding-right: 5px;
+}
+
+.index-life-work .h2p {
+  margin-left: 10%;
+  width: 45%;
+  font-family: Poppins;
+  z-index: 99;
+}
+
+.index-life-work h2 {
+  color: #ff4540;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.index-life-work .h2pimg1 {
+  height: 90%;
+  position: relative;
+  right: -10%;
+  z-index: 3;
+}
+
+.index-life-work .h2pimg2 {
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  bottom: 5%;
+}
+
+.index-life-work {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (max-width: 650px) {
+  p, li {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .index-life-work .h2pimg1 {
+    height: 50%;
+    right: -10%;
+  }
+  .index-life-work .h2p {
+    left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .index-life-work {
+    min-height: 90vh;
+    padding: 0rem;
+  }
+  .index-life-work .h2p {
+    margin-left: 10%;
+    width: 65%;
+  }
+  .index-life-work .h2pimg1 {
+    width: 50%;
+    right: -30%;
+  }
+  .index-life-work .h2pimg2 {
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -99;
+  }
+}
+
+@media (max-height: 500px) {
+  .h2pimg1,
+  .asimg1,
+  .drimg1 {
+    top: 0%;
+  }
+}
+
+.post-index-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.post-index-hero h3 {
+  color: #ff4540;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.post-index-hero p {
+  width: 70%;
+}
+
+.office-menu {
+  height: auto;
+  width: 100vw;
+  background: #ff4540;
+  color: white;
+  font-family: Poppins;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.office-menu .menuB,
+.office-menu .menuC,
+.office-menu .menuD,
+.office-menu .menuE,
+.office-menu .menuF {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 2rem;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin: .5rem;
+}
+
+.office-menu .menuB p,
+.office-menu .menuC p,
+.office-menu .menuD p,
+.office-menu .menuE p,
+.office-menu .menuF p {
+  background: none !important;
+}
+
+.office-menu .menuB:hover,
+.office-menu .menuC:hover,
+.office-menu .menuD:hover,
+.office-menu .menuE:hover,
+.office-menu .menuF:hover {
+  color: #ff4540;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.office-menu a {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .index-life-work {
+    height: 200vh;
+  }
+  .index-life-work .h2pimg1 {
+    height: 50%;
+  }
+}
+
+.unitB,
+.unitC,
+.unitD,
+.unitE,
+.unitF {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 5rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.unitB .unitText,
+.unitC .unitText,
+.unitD .unitText,
+.unitE .unitText,
+.unitF .unitText {
+  padding: 4rem 0rem 2rem 5rem;
+  font-family: Poppins;
+}
+
+.unitB .unitText h4,
+.unitC .unitText h4,
+.unitD .unitText h4,
+.unitE .unitText h4,
+.unitF .unitText h4 {
+  color: #303030;
+  font-weight: 300;
+}
+
+.unitB .unitText h3,
+.unitC .unitText h3,
+.unitD .unitText h3,
+.unitE .unitText h3,
+.unitF .unitText h3 {
+  color: #ff4540;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.unitB .unitText h5,
+.unitC .unitText h5,
+.unitD .unitText h5,
+.unitE .unitText h5,
+.unitF .unitText h5 {
+  color: #ff4540;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.unitB .unitText p,
+.unitC .unitText p,
+.unitD .unitText p,
+.unitE .unitText p,
+.unitF .unitText p {
+  color: #303030;
+  font-size: .75rem;
+}
+
+.unitB .unitText ul li,
+.unitC .unitText ul li,
+.unitD .unitText ul li,
+.unitE .unitText ul li,
+.unitF .unitText ul li {
+  color: #303030;
+  list-style: none;
+}
+
+.unitB .unitText ul li::before,
+.unitC .unitText ul li::before,
+.unitD .unitText ul li::before,
+.unitE .unitText ul li::before,
+.unitF .unitText ul li::before {
+  content: "•";
+  color: #ff4540;
+  height: 5px;
+  width: 5px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.unitB-img {
+  width: 50%;
+  height: auto;
+  background: #ededed;
+}
+
+@media (max-width: 1080px) {
+  .unitB,
+  .unitC,
+  .unitD,
+  .unitE {
+    height: auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .unitB-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bottom-menu {
+  height: auto;
+  float: right;
+  margin: 2rem 5rem;
+  z-index: 999;
+}
+
+.bottom-menu ul {
+  width: 100%;
+  list-style-type: none !important;
+  font-family: Poppins;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.bottom-menu ul li {
+  color: #ff4540;
+  text-decoration: none;
+  border-top: 1px solid #d2d2d2;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 200;
+  padding: .5rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bottom-menu li:hover {
+  background: #f4f4f4;
+}
+/*# sourceMappingURL=offices.css.map */

@@ -1,0 +1,331 @@
+@import url(./master.scss);
+
+$coral: #ff4540;
+$lightGrey: #d2d2d2;
+$white: #fff;
+$black: #000;
+$bg: #ededed;
+
+html{
+    background: $bg;
+    background-size: 100%;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+@media(max-width:600px){
+    html{
+        background: $bg;
+        background-image: none;
+    }
+}
+
+
+.index-hero{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/park-house/_IZ07509-HDR.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        h1{
+            margin-left: 5rem;
+            color: white;
+            font-size: 4rem;
+            font-family: Poppins;
+            font-weight: 400;
+            background: $coral;
+            border: 4px solid white;
+            padding: .5rem 2rem;
+        }
+}
+@media(max-width: 500px){
+    .index-hero h1{
+        font-size: 2rem;
+    }
+}
+
+.index-life-work{
+    height: 130vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 5% 0rem;
+
+    /*LIST STYLING*/
+
+ul{
+    list-style: none;
+    li{
+        margin-bottom: 5px;
+    }
+}
+li::before{
+    content: '●';
+    color: $coral;
+    padding-right: 5px;
+}
+
+    .h2p{
+        margin-left: 10%;
+        width: 45%;
+        font-family: Poppins;
+        z-index: 99;
+
+    }
+        h2{
+            color: $coral;
+            font-weight: 500;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+    .h2pimg1{
+        height: 90%;
+        position: relative;
+        right: -10%;
+        z-index: 3;
+    }
+    .h2pimg2{
+        height: 50%;
+        position: absolute;
+        left: 0%;
+        bottom: 5%;
+    }
+}
+
+.index-life-work{
+    transform: scale(.9);
+}
+    
+@media(max-width:650px){
+    p,li{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:780px){
+    .index-life-work{
+        .h2pimg1{
+            height: 50%;
+            right: -10%
+        }
+        .h2p{
+            left: 0;
+        }
+    }
+
+}
+
+@media(max-width:550px){
+    .index-life-work{
+        min-height: 90vh;
+        padding: 0rem;
+        .h2p{
+            margin-left: 10%;
+            width: 65%;
+            }
+    
+        .h2pimg1{
+            width: 50%;
+            right: -30%;
+        }
+        .h2pimg2{
+            height: 50%;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            z-index: -99;
+        }
+    }
+}
+
+@media(max-height:500px){
+
+    .h2pimg1,
+    .asimg1,
+    .drimg1{
+        top: 0%;
+    }
+
+}
+
+.post-index-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    font-family: Poppins;
+    text-align: center;
+    h3{
+        color: $coral;
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+    p{
+        width: 70%;
+    }
+}
+
+.office-menu{
+    height: auto;
+    width: 100vw;
+    background: $coral;
+    color: white;
+    font-family: Poppins;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .menuB,
+    .menuC,
+    .menuD,
+    .menuE,
+    .menuF{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        padding: 2rem;
+        height: 150px;
+        width: 150px;
+        cursor: pointer;
+        transition: .3s ease;
+        margin: .5rem;
+            p{
+                background: none !important;
+            }
+    }
+    .menuB:hover,
+    .menuC:hover,
+    .menuD:hover,
+    .menuE:hover,
+    .menuF:hover{
+        color: $coral;
+        background: rgba(255, 255, 255, 0.8);
+}
+    a{
+    color: white;
+    }
+}
+@media(max-width:1000px){
+    .index-life-work{
+        height: 200vh;
+        .h2pimg1{
+            height: 50%;
+        }
+    }
+}
+
+.unitB,
+.unitC,
+.unitD,
+.unitE,
+.unitF{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0rem;
+    flex-wrap: wrap;
+
+        .unitText{
+            padding: 4rem 0rem 2rem 5rem;
+            font-family: Poppins;
+                h4{
+                    color: #303030 ;
+                    font-weight: 300;
+
+                }
+                h3{
+                    color: $coral;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                }
+                h5{
+                    color: $coral;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                }
+                p{
+                    color: #303030;
+                    font-size: .75rem;
+                }
+                ul li{
+                    color: #303030;
+                    list-style: none;
+                }
+                ul li::before{
+                    content: "•";
+                    color: $coral;
+                    height: 5px;
+                    width: 5px;
+                    font-size: 1rem;
+                    margin-right: 5px;
+                }
+        }
+}
+
+.unitB-img{
+    width: 50%;
+    height: auto;
+    background: $bg;
+}
+
+@media(max-width:1080px){
+    .unitB,
+    .unitC,
+    .unitD,
+    .unitE{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+.unitB-img{
+    width: 100%;
+    height: auto;
+}
+}
+
+.bottom-menu{
+    height: auto;
+    float: right;
+    margin: 2rem 5rem;
+    z-index: 999;
+        ul{
+            width: 100%;
+            list-style-type: none !important;
+            font-family: Poppins;
+            border-bottom: 1px solid $lightGrey;
+                li{
+                    color: $coral;
+                    text-decoration: none;
+                    border-top: 1px solid $lightGrey;
+                    width: 10rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-weight: 200;
+                    padding: .5rem;
+                    transition: .5s ease;
+                }
+        }
+        li:hover{
+            background: #f4f4f4;
+        }
+} 

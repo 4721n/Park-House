@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@import url(./master.scss);
+html {
+  background: #ededed;
+  background-image: url(../img/graphic/CoralLine.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  html {
+    background: #ededed;
+    background-image: none;
+  }
+}
+
+p, h2 {
+  background: #ededed;
+  padding: .5rem;
+}
+
+.index-hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/park-house/_IZ07649.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-hero h1 {
+  margin-left: 5rem;
+  color: white;
+  font-size: 4rem;
+  font-family: Poppins;
+  font-weight: 400;
+  background: #ff4540;
+  border: 4px solid white;
+  padding: .5rem 2rem;
+}
+
+@media (max-width: 500px) {
+  .index-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.index-life-work {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  padding: 5% 0rem;
+  /*LIST STYLING*/
+}
+
+.index-life-work ul {
+  list-style: none;
+}
+
+.index-life-work ul li {
+  margin-bottom: 5px;
+}
+
+.index-life-work li::before {
+  content: '●';
+  color: #ff4540;
+  padding-right: 5px;
+}
+
+.index-life-work .h2p {
+  margin-left: 5%;
+  width: 45%;
+  font-family: Poppins;
+  z-index: 99;
+}
+
+.index-life-work h2 {
+  color: #ff4540;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.index-life-work .h2pimg1 {
+  height: 400px;
+  position: relative;
+  right: -10%;
+  z-index: 3;
+}
+
+.index-life-work .h2pimg2 {
+  height: 400px;
+}
+
+.index-life-work .h2pimg3 {
+  width: 1000px;
+  bottom: 0;
+}
+
+.index-life-work {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (max-width: 650px) {
+  p, li {
+    font-size: .8rem;
+  }
+  .index-life-work .h2p .h2pimg3 {
+    width: 500px;
+  }
+  .index-life-work .h2p .h2pimg2 {
+    height: 300px;
+  }
+}
+
+.post-index-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.post-index-hero h3 {
+  color: #ff4540;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.post-index-hero p {
+  width: 70%;
+}
+
+.station-container {
+  height: auto;
+  width: 100vw;
+  background: #ff4540;
+  color: white;
+  font-family: Poppins;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.station-container h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.station-container ul li {
+  margin: 1rem;
+}
+
+.station-container ul .plus-li {
+  list-style: none;
+  margin: 0.1rem 0rem 0rem 1rem !important;
+}
+
+.station-container ul .plus-li::before {
+  content: '+';
+}
+
+.station-container .latimer img,
+.station-container .white-city img,
+.station-container .wood-lane img {
+  padding: .5rem;
+  height: 300px;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .station-container {
+    padding: 2rem;
+  }
+  .station-container .latimer img,
+  .station-container .white-city img,
+  .station-container .wood-lane img {
+    padding: .5rem;
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .station-container {
+    padding: 2rem;
+  }
+  .station-container .latimer img,
+  .station-container .white-city img,
+  .station-container .wood-lane img {
+    padding: .5rem;
+    height: 150px;
+    width: auto;
+  }
+}
+
+.bottom-menu {
+  height: auto;
+  float: right;
+  margin: 2rem 5rem;
+  z-index: 999;
+}
+
+.bottom-menu ul {
+  width: 100%;
+  list-style-type: none !important;
+  font-family: Poppins;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.bottom-menu ul li {
+  color: #ff4540;
+  text-decoration: none;
+  border-top: 1px solid #d2d2d2;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 200;
+  padding: .5rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bottom-menu li:hover {
+  background: #f4f4f4;
+}
+/*# sourceMappingURL=connectivity.css.map */

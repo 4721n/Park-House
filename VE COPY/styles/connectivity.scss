@@ -1,0 +1,179 @@
+@import 'master';
+
+.connectivity-hero{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/images/connectivity/Waterloo-station.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.connectivity-welcome{
+    background-image: url(../img/graphics/postHeroOverlay.png);
+    background-position: center;
+    height: auto;
+    font-family: Poppins-Light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 0rem;
+        h2{
+            font-family: 'Tiempos';
+        }
+
+        p{
+            margin: 3rem;
+            width: 35%;
+        }
+}
+
+@media(max-width: 900px){
+    .connectivity-welcome p{
+        width: 80%;
+    }
+
+}
+
+.stations-container{
+    height: 50vh;
+    background-color: $navyBG;
+    color: white;
+    font-family: Poppins-Light;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+        h4{
+            width: 35%;
+        }
+
+        .stations-sub-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+                .southwark,
+                .waterloo{
+                    margin: 0rem 2rem;
+        }
+}
+}
+@media(max-width: 900px){
+    .stations-container h4{
+        width: 80%;
+    }
+
+}
+
+
+
+.connectivity-info-container{
+    font-family: Poppins-Light;
+    height: auto;
+    width: 100vw;
+    background: white;
+    background-image: url(../img/graphics/overlayLeft.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0rem 0px;
+
+        img{
+            height: 400px;
+            width: auto;
+            margin: 8rem 0rem;
+        }
+
+        .connectivity-info-text{
+            width: 20%;
+            font-family: Poppins-Light;
+                p{
+                    margin-top: 2rem;
+                }
+        }
+}
+
+@media(max-width: 750px){
+    .connectivity-info-container{
+        flex-direction: column;
+        img{
+            height: 250px;
+            width: auto;
+            margin: 2.5rem;
+        }
+        .connectivity-info-text{
+            width: 80%;
+            text-align: center;
+            margin: 2.5rem;
+        }
+    }
+}
+@media(max-width: 445px){
+    .connectivity-info-container{
+        img{
+            height: 200px;
+            width: auto;
+            margin: 2.5rem;
+        }
+}
+}
+.travel-far-container{
+    height: auto;
+    color: white;
+    background-color: $navyBG;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+        h1{
+            color: white;
+            margin: 5rem;
+            font-family: 'Tiempos';        }
+        img{
+            margin-bottom: 5rem;
+            transform: scale(1.35);
+        }
+}
+
+@media(max-width:500px){
+.travel-far-container img:hover{
+    transform: scale(1.9);
+}
+}
+
+@media(max-width: 1050px){
+    .travel-far-container{
+        img{
+            width: 800px;
+        }
+    }
+}
+@media(max-width: 770px){
+    .travel-far-container{
+        img{
+            width: 600px;
+        }
+    }
+}
+@media(max-width: 580px){
+    .travel-far-container{
+        img{
+            width: 400px;
+        }
+
+        h1{
+            margin: 4rem 2rem;
+        }
+    }
+}

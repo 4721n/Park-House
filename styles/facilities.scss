@@ -1,0 +1,139 @@
+@import url(./master.scss);
+
+$coral: #ff4540;
+$lightGrey: #d2d2d2;
+$white: #fff;
+$black: #000;
+$bg: #ededed;
+
+html{
+    background: $bg;
+    background-image: url(../img/graphic/CoralLine.png);
+    background-size: 100%;
+    background-position: center;
+}
+@media(max-width:600px){
+    html{
+        background: $bg;
+        background-image: none;
+    }
+}
+
+
+.index-hero{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/park-house/_IZ07385-HDR.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        h1{
+            margin-left: 5rem;
+            color: white;
+            font-size: 4rem;
+            font-family: Poppins;
+            font-weight: 400;
+            background: $coral;
+            border: 4px solid white;
+            padding: .5rem 2rem;
+        }
+}
+@media(max-width: 500px){
+    .index-hero h1{
+        font-size: 2rem;
+    }
+}
+
+.index-life-work{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5% 0rem;
+
+    /*LIST STYLING*/
+
+ul{
+    list-style: none;
+    background: $bg;
+    padding: .5rem;
+    li{
+        margin-bottom: 5px;
+    }
+}
+li::before{
+    content: '●';
+    color: $coral;
+    padding-right: 5px;
+}
+
+.h2p{
+    margin-left: 5%;
+    width: 45%;
+    font-family: Poppins;
+    z-index: 99;
+
+}
+    h2{
+        color: $coral;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+.h2pimg1{
+    width: auto ;
+    height: 850px;
+    position: absolute;
+    right: -10%;
+    z-index: 3;
+}
+.h2pimg2{
+    width: 1000px;
+    margin-top: 4rem;
+}
+}
+
+
+
+.index-life-work{
+    transform: scale(.9);
+}
+    
+@media(max-width:650px){
+    p,li{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:950px){
+    .index-life-work .h2pimg1,{
+       height: 500px;
+}
+.index-life-work .h2pimg2{
+        width: 500px;
+    }
+}
+
+@media(max-width:550px){
+    .index-life-work{
+       flex-direction: column;
+       .h2p{
+           width: 90%;
+           margin-bottom: 2rem;
+       }
+       .h2pimg1{
+        position: relative;
+        width: 300px;
+    }
+    .h2pimg2{
+        margin-top: -5rem;
+        }
+    }
+}
+

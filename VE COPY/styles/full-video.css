@@ -1,0 +1,10 @@
+.video-landscape {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-landscape:focus {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=full-video.css.map */

@@ -1,0 +1,658 @@
+@import './master';
+
+*{
+    font-family: Poppins-Light;
+}
+
+h3, strong{
+    color: $coral;
+}
+
+.contact-intro{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6rem;
+    h1{
+            margin-bottom: 2rem;
+            color: black;
+            font-family: Poppins;
+        }
+}
+
+.contact-body{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+@media(min-width: 1301px){
+    .contact-body{
+        margin: 2rem 10rem;
+    }
+}
+@media(max-width: 1300px){
+    .contact-body{
+        margin: 2rem 7rem;
+    }
+}
+@media(max-width: 1100px){
+    .contact-body{
+        margin: 2rem 4rem;
+    }
+}
+@media(max-width: 900px){
+    .contact-body{
+        margin: 2rem 1rem;
+    }
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    a{
+        color: black;
+        text-decoration: none;
+}
+    h3{
+        margin-bottom: 2rem;
+    }
+}
+strong{
+    font-family: Poppins-Bold;
+}
+.contact1 ul, .contact2 ul{
+    list-style: none;
+}
+.contact1 img, .contact2 img{
+    margin-top: 1rem;
+    height: 100px;
+}
+
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+        h4{
+            margin-bottom: 2rem;
+        }
+}
+#contactForm{
+    width: 80%;
+    margin-bottom: 5rem;
+    position: relative;
+}
+@media(max-width:1150px){
+    #contactForm{
+        width: 80%;
+    }
+}
+@media(max-width:600px){
+    #contactForm{
+        width: 100%;
+    }
+}
+.nameForm,
+.contactForm{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.phoneLabel{
+    z-index: -999;
+    position: absolute;
+    left: 41%;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='textarea']{
+    width: 40%;
+    border: $coral solid 1px;
+    outline: none;
+    margin: 1rem 0rem;
+    margin-right: 1%;
+    padding: .5rem 1rem;
+    transition: .3s;
+}
+
+input[type='textarea']{
+    width: 81%;
+    height: 150px;
+    vertical-align: top; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='text']:focus,
+input[type='number']:focus,
+input[type='textarea']:focus{
+    outline: $coral 1.5px solid;
+}
+
+.submit-button{
+    border: 1px solid black;
+    padding: 1rem 1.5rem;
+    background: none;
+    transition: .25s ease-in-out;
+    position: absolute;
+    right: 20%;
+}
+.submit-button:hover{
+    border: 1px solid $coral;
+    color: $coral;
+    cursor: pointer;
+}
+.general-enquiries-responsive{
+    display: none;
+}
+.general-enquiries{
+    display: flex;
+}
+@media(max-width: 750px){
+    .contact-intro{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            width: 80%;
+        }
+    }
+    .contact-body{
+        flex-direction: column-reverse;
+    }
+    .general-enquiries{
+        display: none;
+    }
+    .general-enquiries-responsive{
+        text-align: center;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        display: flex;
+    }
+    .left{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+        position: relative;
+            .contact1{
+                margin-right: 3rem;
+            }
+    }
+    .form-container{
+        width: 100%;
+        margin-left: 5rem;
+}
+    #phoneLabel{
+        left: 50%;
+    }
+}
+
+@media(max-width: 520px){
+    .contact1,
+    .contact2{
+        font-size: .7rem;
+    }
+}
+
+@media(max-width:630px){
+
+    .contact1 img,.contact2 img{
+        width: 100px;
+        height: auto;
+    }
+
+}
+
+/* COLOURS */
+
+$coral: #ff4540;
+$lightGrey: #d2d2d2;
+$white: #fff;
+$black: #000;
+$bg:#ededed;
+
+
+/* FONT */
+/* WILL USE GOOGLE FONTS CDN FOR POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+//reset padding & margins //
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+p,h2{
+    background: $bg;
+    padding: .5rem;
+}
+/*NAVIGATION */
+
+.navigation{
+    height: 7rem;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: Poppins-Light;
+    letter-spacing: .15rem;
+    z-index: 999;
+    justify-content: space-between;
+    position: absolute;
+    border-bottom: 3px solid white !important;
+
+    a{
+        color: white;
+    }
+}
+
+.logo{
+    background-color: $coral;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100px;
+        margin: 1rem;
+    }
+}
+
+.brochure{
+    font-size: .8rem;
+    padding: .8rem 1rem;
+    border: white 2px solid;
+    background: $coral;
+    cursor: pointer;
+    transition: .35s ease;
+    text-align: center;
+    z-index: 999999;
+    position: absolute;
+    right: 10%;
+    transition: .32s ease;
+
+    br{
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            transition: .35s ease;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+
+        }
+}
+.brochure:hover{
+    color: $lightGrey;
+    border: $lightGrey 2px solid;
+        a{
+            color: $lightGrey;
+        }
+}
+
+.availble-button{
+    font-size: .8rem;
+    padding: .8rem 1rem;
+    border: white 2px solid;
+    background: $coral;
+    cursor: pointer;
+    transition: .35s ease;
+    text-align: center;
+    z-index: 999999;
+    position: absolute;
+    right: 27%;
+    transition: .32s ease;
+
+    br{
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            transition: .35s ease;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+
+        }
+}
+.availble-button:hover{
+    color: $lightGrey;
+    border: $lightGrey 2px solid;
+        a{
+            color: $lightGrey;
+        }
+}
+
+
+.burger{
+    cursor: pointer;
+    margin-right: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    right: 2%;
+    transition: .5s ease;
+    position: fixed;
+    background: $coral;
+    border: 2px solid white;
+}
+.line{
+    background-color: white;
+    height: 3px;
+    width: 80%;
+    transition: .35s ease;
+    border-radius: 10%;
+
+}
+.burger:hover .line{
+    background-color: $lightGrey !important;
+}
+
+@media(max-width: 450px){
+.burger{
+    width: 2rem;
+    height: 2rem;
+    right: 0%;
+    .line{
+        height: .1rem;
+    }
+}
+}
+
+
+
+//menu//
+
+.navigation-links{
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100vw;
+font-family: Poppins;
+font-weight: 400;
+color: white;
+background-color: $coral;
+display: flex;
+top: -80rem;
+flex-direction: column;
+align-items: left;
+justify-content: center;
+font-size: 3rem;
+letter-spacing: .2rem;
+transition: .5s ease;
+padding: .5rem 0rem;
+opacity: 0;
+z-index: 999999;
+
+.exit-nav{
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    font-weight: 100;
+    right: 4.5%;
+    top: 3%;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.exit-nav:hover{
+    color: $lightGrey;
+}
+}
+
+@media(max-width:450px){
+.navigation-links{
+    height: 110vh;
+    padding-bottom: 15vh;
+}
+}
+
+.navigation-links.active{
+display: flex;
+top: 0;
+opacity: 1;
+transition: .5s ease-in-out;
+
+}
+
+.navigation-links a{
+margin: 1rem 10rem;
+color: white;
+text-decoration: none;
+transition: .3s ease;
+}
+.navigation-links a:hover{
+color: $lightGrey;
+}
+
+#home-link.active,
+#location-link.active,
+#connectivity-link.active,
+#facilities-link.active,
+#contact-link.active,
+#pricing-link.active{
+color: #333c43;
+font-size: 1rem;
+margin: .5rem;
+}
+#contact-link.active{
+border: 2px solid #333c43;
+
+}
+
+/* Navigation Media Queries */
+
+@media(max-width: 1330px){
+    .brochure{
+        right: 12%;
+    }
+    .availble-button{
+        right: 34%;
+    }
+}
+
+@media(max-width: 1000px){
+    .brochure{
+        right: 12%;
+    }
+    .availble-button{
+        right: 45%;
+    }
+}
+
+@media(max-width: 785px){
+.navigation-links{
+    font-size: 2.5rem;
+        a{
+        margin: 1rem 5rem;
+        }
+}
+.offices-nav{
+    font-size: 1rem;
+}
+.brochure{
+    right: 17%;
+}
+.availble-button{
+    right: 52%;
+}
+}
+
+@media(max-width: 650px){
+    .brochure{
+        right: 20%;
+    }
+    .availble-button{
+        display: none;
+    }
+    }
+
+@media(max-width: 450px){
+.brochure{
+    margin-left: 8px;
+    border: solid white 1px;
+    padding: .8rem .2rem;
+    }
+}
+
+@media(max-width:450px){
+.navigation-links{
+    height: 110vh;
+    padding-top: 0rem;
+        a{
+            margin: .5rem 2.5rem;
+        }
+    }
+}
+
+@media(max-width:415px){
+    .brochure{
+        font-size: .5rem;
+        right: 25%;
+        }
+    }
+
+    /*footer*/
+
+    .footer{
+        width: 100vw;
+        height: auto;
+        color: white;
+        background-color: $coral;
+        font-family: Poppins;
+        padding: 2rem 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+            .footer-menu{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    transition: .35s ease;
+                }
+                ul{
+                    list-style: none;
+                }
+                a:hover{
+                    color: $lightGrey;
+                }
+                .park-house-c{
+                    font-size: .5rem;
+                }
+            }
+
+            .footer-right-top{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: .8rem;
+                border-bottom: 1px solid white;
+                ul{
+                line-height: 1.5rem;
+                margin: 1rem;
+                list-style-type: none;
+            }
+        }
+
+        .footer-right-bottom{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            img{
+                height: 75px;
+            }
+        }
+    }
+
+    @media(max-width: 630px){
+        .footer{
+            position: relative;
+            height: auto;
+            flex-direction: column;
+            padding: .5rem;
+            .footer-right-top{
+                font-size: .5rem;
+                line-height: 1rem;
+            }
+            .footer-right-bottom{
+                img{
+                    height: 50px;
+                }
+            }
+        }
+        .footer-menu ul{
+            display: flex;
+            flex-direction: row;
+                li{
+                    font-size: .5rem;
+                    margin: .5rem;
+                }
+        }
+        .park-house-c{
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+    }
+
+    .bottom-menu{
+        height: auto;
+        float: right;
+        margin: 2rem 5rem;
+        z-index: 999;
+            ul{
+                width: 100%;
+                list-style-type: none !important;
+                font-family: Poppins;
+                border-bottom: 1px solid $lightGrey;
+                    li{
+                        color: $coral;
+                        text-decoration: none;
+                        border-top: 1px solid $lightGrey;
+                        width: 10rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-weight: 200;
+                        padding: .5rem;
+                        transition: .5s ease;
+                        background: $bg;
+                    }
+            }
+            li:hover{
+                background: #f4f4f4;
+            }
+    } 
+
+html{
+    background-image: none !important ;
+}
