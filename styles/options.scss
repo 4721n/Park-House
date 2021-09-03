@@ -9,7 +9,7 @@ $bg: #ededed;
 html{
     background: $bg;
     background-image: url(../img/graphic/CoralLine.png);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 @media(max-width:600px){
@@ -32,7 +32,7 @@ html{
     flex-direction: row;
     align-items: center;
         h1{
-            margin-left: 5rem;
+            margin:auto;
             color: white;
             font-size: 4rem;
             font-family: Poppins;
@@ -150,7 +150,7 @@ li::before{
         margin-bottom: .5rem;
     }
     p{
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -204,7 +204,7 @@ li::before{
     border-color:$lightGrey;
     border-style:solid;
     border-width:1px;
-    font-family: Poppins-Regular;
+    font-family: 'Poppins', sans-serif !important;
     font-size:14px;
   overflow:hidden;
   padding:10px 5px;
@@ -230,6 +230,7 @@ li::before{
     word-break:normal;
     border-top: none;
     border-bottom: none;
+    font-family: 'Poppins', sans-serif !important;
     
 }
 
@@ -243,6 +244,7 @@ li::before{
     border-width:1px; 
     border-top: none;
     border-bottom: none;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .title-table{
@@ -250,14 +252,19 @@ li::before{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .15rem ;
-        a{
+    font-family: 'Poppins', sans-serif !important;
+
+    a{
             text-decoration: none;
             transition: .5s ease;
             color: white;
+            font-family: 'Poppins', sans-serif !important;
+
         }
 }
 .title-table a:hover{
     color: $bg;
+
 }
 .hl-table{
 }

@@ -216,7 +216,7 @@ const contentString1=
     '<div id="bodyContent">' +
     "<p>Park House London <br> West London <br> W10 <br> London</p>" + 
     "<br>" +
-    '<a href="https://www.google.com/maps/place/1+Valentine+Pl,+South+Bank,+London+SE1+8QH/@51.5016158,-0.107136,17z/data=!3m1!4b1!4m5!3m4!1s0x487604a4d768645d:0x8f852506099af7b8!8m2!3d51.5016158!4d-0.1049473" target="_blank"><p> Click here to view in Google Maps </p></a>'
+    '<a href="https://goo.gl/maps/tuzt2fgCmrp4HPQ26" target="_blank"><p> Click here to view in Google Maps </p></a>'
     "</div>" +
     "</div>";
 

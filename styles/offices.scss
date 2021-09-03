@@ -32,7 +32,7 @@ html{
     flex-direction: row;
     align-items: center;
         h1{
-            margin-left: 5rem;
+            margin: auto;
             color: white;
             font-size: 4rem;
             font-family: Poppins;
@@ -172,6 +172,15 @@ li::before{
         width: 70%;
     }
 }
+@media(max-width:825px){
+    .post-index-hero{
+        padding: 4rem 1.5rem;
+        p{
+            width: 90%;
+        }
+    }
+
+}
 
 .office-menu{
     height: auto;
@@ -239,9 +248,8 @@ li::before{
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    margin: 5rem 0rem;
+    margin: 5rem;
     flex-wrap: wrap;
-
         .unitText{
             padding: 4rem 0rem 2rem 5rem;
             font-family: Poppins;
@@ -280,7 +288,7 @@ li::before{
 }
 
 .unitB-img{
-    width: 50%;
+    width: 40%;
     height: auto;
     background: $bg;
 }
@@ -289,12 +297,14 @@ li::before{
     .unitB,
     .unitC,
     .unitD,
-    .unitE{
+    .unitE,
+    .unitF{
         height: auto;
         width: 100vw;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        margin:1rem;
     }
 .unitB-img{
     width: 100%;

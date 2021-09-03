@@ -3,7 +3,7 @@
 html {
   background: #ededed;
   background-image: url(../img/graphic/CoralLine.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -35,7 +35,7 @@ html {
 }
 
 .index-hero h1 {
-  margin-left: 5rem;
+  margin: auto;
   color: white;
   font-size: 4rem;
   font-family: Poppins;
@@ -69,11 +69,16 @@ html {
 .index-life-work ul {
   list-style: none;
   background: #ededed;
-  padding: .5rem;
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 .index-life-work ul li {
   margin-bottom: 5px;
+  list-style-position: outside;
+  padding-left: 0.5em;
 }
 
 .index-life-work li::before {
@@ -87,6 +92,7 @@ html {
   width: 45%;
   font-family: Poppins;
   z-index: 99;
+  background: #ededed;
 }
 
 .index-life-work h2 {

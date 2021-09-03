@@ -8,6 +8,11 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free" !important;
 }
 
 html, body {
@@ -19,9 +24,13 @@ a {
   text-decoration: none;
 }
 
-p, h2 {
+p {
   background: #ededed;
   padding: .5rem;
+}
+
+th, tr, td, .tg-0lax {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /*NAVIGATION */
@@ -91,6 +100,7 @@ p, h2 {
   right: 10%;
   -webkit-transition: .32s ease;
   transition: .32s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .brochure br {
@@ -250,8 +260,8 @@ p, h2 {
 
 @media (max-width: 450px) {
   .navigation-links {
-    height: 110vh;
-    padding-bottom: 15vh;
+    height: 100vh;
+    padding-bottom: 12vh;
   }
 }
 
@@ -331,7 +341,7 @@ p, h2 {
 
 @media (max-width: 650px) {
   .brochure {
-    right: 20%;
+    right: 19%;
   }
   .availble-button {
     display: none;
@@ -481,6 +491,9 @@ p, h2 {
     position: absolute;
     bottom: 0%;
     left: 0%;
+  }
+  .park-house-fs {
+    display: none;
   }
 }
 

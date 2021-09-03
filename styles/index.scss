@@ -9,8 +9,9 @@ $bg: #ededed;
 html{
     background: $bg;
     background-image: url(../img/graphic/CoralLine.png);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+
 }
 @media(max-width:600px){
     html{
@@ -19,7 +20,7 @@ html{
     }
 }
 
-p,h2{
+p{
     background: $bg;
     padding: .5rem;
 }
@@ -49,7 +50,9 @@ p,h2{
 .video-portrait{
     display: none;
 }
-
+#mute-button{
+    display: none !important;
+}
 .fa-volume-up,.fa-play{
     color: whitesmoke;
     font-size: 2rem;
@@ -119,6 +122,7 @@ p,h2{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 2rem;
     }
     .parkhouse-logo-container img{
         height: 500px;
@@ -149,10 +153,9 @@ p,h2{
     padding: 5% 0rem;
     .h2p{
         margin-left: 5%;
-        width: 45%;
+        width: 40%;
         font-family: Poppins;
         z-index: 99;
-
     }
         h2{
             color: $coral;
@@ -160,7 +163,10 @@ p,h2{
             font-size: 2rem;
             margin-bottom: 2rem;
         }
+        p{
+            border-radius: 20%;
 
+        }
     .h2pimg1{
         width: auto ;
         height: 850px;
@@ -174,7 +180,7 @@ p,h2{
     }
 }
 @media(max-width:950px){
-    .index-life-work .h2pimg1,{
+    .index-life-work .h2pimg1{
        height: 500px;
 }
 .index-life-work .h2pimg2{

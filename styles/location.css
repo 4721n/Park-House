@@ -2,7 +2,7 @@
 html {
   background: #ededed;
   background-image: url(../img/graphic/CoralLine.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -34,7 +34,7 @@ html {
 }
 
 .location-hero h1 {
-  margin-left: 5rem;
+  margin: auto;
   color: white;
   font-size: 4rem;
   font-family: Poppins;
