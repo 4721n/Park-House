@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['submit'])) {
-    $mailTo = ['manu@kittoffices.com'];
+    $mailTo = ['poppy@kittoffices.com'];
     $checkboxes = [];
     $firstName = htmlspecialchars($_POST['firstName']);
     $lastName = htmlspecialchars($_POST['lastName']);
@@ -12,12 +12,12 @@ if (isset($_POST['submit'])) {
     $message = htmlspecialchars($_POST["message"]);
 
     if (isset($_POST['blank-fitted'])) {
-        $mailTo[] = 'manu@kittoffices.com';
+        $mailTo[] = 'poppy@kittoffices.com';
         $checkboxes[] = 'blank-fitted';
     }
 
     if (isset($_POST['managed-radio'])) {
-        $mailTo[] = 'manu@kittoffices.com';
+        $mailTo[] = 'poppy@kittoffices.com';
         $checkboxes[] = 'managed';
     }
 
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         #header("Location: index.html?mailerror");
     }
 
-    $bcc = "manu@kittoffices.com";
+    $bcc = "sasha@kittoffices.com";
     $subject = "Park House Website Enquiry From; " . $email;
     $txt = "You have an enquiry from " . $firstName . " $lastName \n" .
         'Contact number: ' . $number . "\n" .

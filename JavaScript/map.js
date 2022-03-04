@@ -194,8 +194,8 @@ function initMap() {
   
 
   const myLatLng = {
-    lat: 51.51663741555966, 
-    lng:  -0.22268765361444207
+    lat:51.51667484093925, 
+    lng:-0.22257782596742076
   };
 
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -225,7 +225,7 @@ const contentString1=
     content: contentString1,
   });
   var marker1 = new google.maps.Marker({
-    position: {    lat: 51.5160698, lng: -0.2233701}, 
+    position: {    lat: 51.51661780640963,lng:  -0.22281612391745922 }, 
     map,
     title: "Park House",
     icon: 'https://nathanwinter.uk/ParkHouse/img/graphic/pin.png',
