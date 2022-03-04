@@ -495,8 +495,7 @@ th, tr, td, .tg-0lax {
     left: 0%;
   }
   .park-house-fs {
-    position: absolute;
-    bottom: -100px;
+    display: none;
   }
 }
 
